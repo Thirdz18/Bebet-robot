@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run Desktop Robot",
+      "type": "python",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/desktop_robot.py",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    }
+  ]
+}
