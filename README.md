@@ -70,6 +70,19 @@ pip install -r requirements.txt
 python src/desktop_robot.py
 ```
 
+## Run in Visual Studio Code
+
+Yes, this project can run in Visual Studio Code. Recommended steps:
+
+1. Open this folder in VS Code.
+2. Install the VS Code Python extension if it is not installed yet.
+3. Select the `.venv` Python interpreter after running the setup steps.
+4. Run the **Install robot requirements** task if dependencies are not installed yet.
+5. Open the Run and Debug panel and choose **Run Desktop Robot**.
+
+The app still needs local camera and microphone permissions, even when launched from VS Code.
+
+
 Click **Start Robot** to open the camera window. Click **Listen Once** and speak after the status changes to listening. Press `q` inside the camera window or click **Stop** to stop the robot.
 
 ## What you need to install
