@@ -64,6 +64,25 @@ If VS Code shows conflict markers inside a file, they look like this:
 
 Choose the correct version of the text, delete those marker lines, save the file, then run `git status` again.
 
+
+## Recommended Git branch workflow
+
+To avoid merge conflicts, make robot changes on a separate branch instead of editing directly on `main` or `master`. Example:
+
+```bash
+git checkout -b desktop-robot-assistant
+```
+
+After making changes, commit them on that branch:
+
+```bash
+git status
+git add .
+git commit -m "Add desktop robot assistant"
+```
+
+Then open a pull request from `desktop-robot-assistant` into your main branch. If your local folder already has conflicts and you have no local edits to keep, it is usually simpler to download/extract a fresh ZIP or reset your Git checkout before creating a new branch.
+
 ## Setup
 
 ### Easiest setup on Windows
