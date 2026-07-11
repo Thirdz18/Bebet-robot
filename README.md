@@ -22,6 +22,24 @@ A starter Python desktop robot prototype that can run locally on a laptop. It us
 
 ## Setup
 
+### Easiest setup on Windows
+
+Double-click or run:
+
+```bat
+install_windows.bat
+```
+
+This creates `.venv` and installs the Python packages from `requirements.txt`. You still need Python installed first.
+
+After setup, run:
+
+```bat
+run_windows.bat
+```
+
+### Manual setup
+
 Create and activate a virtual environment:
 
 ```bash
@@ -53,6 +71,18 @@ python src/desktop_robot.py
 ```
 
 Click **Start Robot** to open the camera window. Click **Listen Once** and speak after the status changes to listening. Press `q` inside the camera window or click **Stop** to stop the robot.
+
+## What you need to install
+
+You need to install Python once on your computer. After that, this project needs Python packages from `requirements.txt`:
+
+- `opencv-python` for the laptop camera.
+- `mediapipe` for face detection.
+- `pyttsx3` for robot voice output.
+- `SpeechRecognition` for microphone speech-to-text.
+- `PyAudio` so Python can access the microphone.
+
+If you run `install_windows.bat` or `pip install -r requirements.txt`, those packages are installed for you inside `.venv`.
 
 ## Notes
 
