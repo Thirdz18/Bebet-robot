@@ -39,6 +39,31 @@ Documents\Bebet-robot
 
 After extracting, open that extracted folder in Visual Studio Code or double-click `install_windows.bat` from inside the folder.
 
+
+## If Git or VS Code says there is a merge conflict
+
+If you only downloaded the project as a ZIP and have not edited any files yet, the easiest fix is to delete the extracted folder and extract the ZIP again. A ZIP download does not need Git merge steps.
+
+If you are using Git and want to keep the newest version from the repository, run these commands from inside the project folder:
+
+```bash
+git status
+git fetch origin
+git reset --hard origin/main
+```
+
+Only use `git reset --hard origin/main` if you do not need to keep your local edits, because it replaces local files with the repository version. If your default branch is named `master`, use `origin/master` instead of `origin/main`.
+
+If VS Code shows conflict markers inside a file, they look like this:
+
+```text
+<<<<<<<
+=======
+>>>>>>>
+```
+
+Choose the correct version of the text, delete those marker lines, save the file, then run `git status` again.
+
 ## Setup
 
 ### Easiest setup on Windows
